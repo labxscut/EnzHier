@@ -60,7 +60,7 @@ def main():
     test_data = 'inputs/' + args.fasta_data 
     # converting fasta to dummy csv file, will delete after inference
     # esm embedding are taken care of
-    prepare_infer_fasta(test_data) 
+    prepare_infer_fasta(test_data)
     
     # CLEAN
     # infer_maxsep2(train_data, test_data, report_metrics=False, pretrained=False, 
