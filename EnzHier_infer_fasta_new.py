@@ -36,8 +36,8 @@ def infer_maxsep2(train_data, test_data, report_metrics = False,
     # load precomputed EC cluster center embeddings if possible
     emb_train = model(esm_embedding(ec_id_dict_train, device, dtype))
         
-    emb_test = model_embedding_test(id_ec_test, model, device, dtype)
-    eval_dist = get_dist_map_test(emb_train, emb_test, ec_id_dict_train, id_ec_test, device, dtype)
+    emb_test, valid_id_ec_test = model_embedding_test(id_ec_test, model, device, dtype)
+    eval_dist = get_dist_map_test(emb_train, emb_test, ec_id_dict_train, valid_id_ec_test, device, dtype)
     seed_everything()
     eval_df = pd.DataFrame.from_dict(eval_dist)
     ensure_dirs("./results")
