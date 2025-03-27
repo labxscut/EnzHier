@@ -1,12 +1,12 @@
 import argparse
 import os
-from CLEAN.utils import *
-from CLEAN.infer import infer_maxsep
-from CLEAN.dataloader import *
-from CLEAN.model import *
-from CLEAN.utils import *
-from CLEAN.infer import *
-from CLEAN.distance_map import get_dist_map
+from EnzHier.utils import *
+from EnzHier.infer import infer_maxsep
+from EnzHier.dataloader import *
+from EnzHier.model import *
+from EnzHier.utils import *
+from EnzHier.infer import *
+from EnzHier.distance_map import get_dist_map
 
 def eval_parse():
     # only argument passed is the fasta file name to infer
