@@ -69,7 +69,6 @@ Where `your_fasta_file` is the name of your FASTA file (without extension) locat
 
 The default inference uses:
 - Model: `split100_triplet_withEC_7000` (located in `data/model/`)
-- GMM ensemble: `gmm_ensumble.pkl` (located in `data/pretrained/`)
 
 ## Output Format
 
@@ -79,8 +78,8 @@ The output CSV file contains predicted EC numbers for each protein sequence alon
 
 For custom model training or advanced usage, refer to the EnzHier package modules:
 
-- `LayerNormNet` - Neural network architecture with layer normalization
-- `infer_maxsep2` - Function for maximum separation inference
+- `U-net Neural network` - Neural network architecture with layer normalization
+- `infer_maxsep2` - Function for inference
 - `esm_embedding` - Function to generate ESM embeddings for protein sequences
 
 ## Citation
